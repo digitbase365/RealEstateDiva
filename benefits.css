@@ -1,0 +1,244 @@
+:root{
+  --act-color: #ffc000;
+}
+.wrap{
+  max-width: 75%;
+  margin: 0 auto; 
+  font-weight: 300; 
+}
+.bgc{
+  background-color: #9BD1E5;
+  background-color: #f7f5f3;
+  background-color: #F8F4F9;  
+  background-color: #F8F4FD;  
+}
+.frontline{
+  min-height: 36vh; 
+  background: url(./img/frontlinePic.avif) no-repeat center center / cover;
+  margin-top: 0;
+  position: relative;
+  top: 7.5vh;
+  display: grid;
+  place-items: center;
+}
+.frontline::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .65);
+}
+.frontline .txtBx{
+  max-width: 45em;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+.frontline .txtBx h2{
+  font-size: clamp(0.9rem, 1vw + 1.65rem, 4rem);
+  font-weight: 400;
+  letter-spacing: .02rem;
+}
+.frontline .txtBx p{
+  margin: 2em 0 3em;
+  
+}
+.frontline .cta{
+  width: 200px;
+  height: 50px;
+  border: 2px solid #9506be;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: .45em 2em;
+  transition: .5s ease;
+}
+.frontline .cta:hover{
+  background-color: #9506be; 
+}
+
+/* FRONTLINE FLUIDITY */ 
+
+@media screen and (max-width: 991px) {
+  .frontline{
+    min-height: 49vh;   
+  }
+  .frontline .txtBx{
+    max-width: 90%; 
+  }
+  .frontline .txtBx h2{ 
+    font-weight: 300;
+    letter-spacing: unset;
+    line-height: 1.1;
+  }
+  .frontline .txtBx p{
+    margin: 2em 0 2.5em;
+    line-height: 1.25;
+  }
+  .frontline .cta{
+    width: 200px;
+    height: 50px;
+    border: 2px solid #9506be;
+    color: #fff; 
+    font-weight: 300;
+    padding: .25em 1.5em;
+    margin-bottom: 100px;
+    transition: .5s ease;
+  }
+}
+/* END OF FRONTLINE RULESET */
+
+/**********KEY INDICATORS RULESET**********/
+.key-indicators{
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 10%; 
+  padding: 50px 0; 
+} 
+.key-indicators .key{
+  flex-basis: 15%; 
+  text-align: right;
+}
+.key h3{
+  font-size: clamp(0.9rem, 1vw + 1.5rem, 4rem);
+  color: #224;
+  font-family: 'Dosis', sans-serif;
+}
+.key-indicators .indicator{
+  flex-basis: 67%;
+}
+.indicator .txt{
+  font-size: clamp(0.9rem, .1vw + 1rem, 2.2rem);
+  line-height: 1.65;
+}
+.indicator .stats .imgBx{
+  margin: 3.5em 0 1.75em; 
+}
+.indicator .imgBx h5{
+  color: #f6af25;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1em 0 3em;
+  border-top: 1px solid #e3e0dc; 
+  letter-spacing: .5px; 
+}
+.indicator .stats img{
+  width: 80%;
+}
+.indicator .stats p{
+  font-size: 0.7rem;
+  color: #335;
+  font-style: italic;
+}
+
+/* KEY INDICATORS FLUIDITY */ 
+
+@media screen and (max-width: 991px) {
+  .wrap{
+    max-width: 95%;
+  }
+  .key-indicators{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 10%;  
+    padding: 30px 0; 
+  } 
+  .key-indicators .key{
+    flex-basis: 80%; 
+    text-align: left;
+    margin-bottom: 15px;
+    padding: 0 10px;
+  } 
+  .key-indicators .indicator{
+    flex-basis: 100%; 
+  }
+  .indicator .stats .imgBx{
+    margin: .5em 0 1.75em; 
+  }
+  .indicator .imgBx h5{ 
+    font-size: .75rem;
+    font-weight: 300;
+    padding: 1em 0 1.5em; 
+    letter-spacing: unset; 
+  }
+  .indicator .stats img{
+    width: 100%;
+  }
+  .indicator .stats p{
+    font-size: 0.6rem; 
+  }
+  .indicator .txt{
+    padding: 0 10px;
+    font-size: clamp(1.01rem, .1vw, 2.2rem); 
+    line-height: 1.45;
+  }
+} 
+
+/**********END OF KEY INDICATORS RULESET**********/
+
+
+/* *****PARALLAX SECTION RULESET************ */
+
+.parallax{
+  height: 40vh;
+  background: #F8F4FD url(./img/paralla.jpg) center center / cover;
+  position: relative;
+  background-attachment: fixed;
+  display: grid;
+  place-content: center;
+}
+.parallax::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: .65;
+}
+.parallax a{
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 2px solid #ffcc00; 
+  padding: 3px 40px;
+  transition: .5s ease;
+}
+.parallax a:hover{
+  background-color: #ffcc00; 
+}
+.parallax h3{
+  position: relative;
+  color: var(--act-color); 
+  color: #ffcc00;  
+  font-size: 1.35rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  transition: .5s ease;
+}
+.parallax a:hover h3{
+  color: #fff;
+  color: #000; 
+}
+
+/*PARALLAX FLUIDITY */ 
+
+@media screen and (max-width: 991px) {
+  .parallax{
+    height: 30vh;
+    background: #F8F4FD url(./img/paralla.jpg) left center / cover; 
+  }
+  .parallax a{  
+    padding: 2px 15px; 
+  }
+  .parallax h3{ 
+    font-size: 1.15rem; 
+    letter-spacing: unset; 
+  }
+} 
+/* *****END OF PARALLAX SECTION RULESET************ */
+
