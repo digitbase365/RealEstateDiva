@@ -1,0 +1,214 @@
+:root{
+  --pri-color: #48A9A6;
+  --sec-color: #FFB49A;
+  --txt-color: #2d243d;
+  --hlt-color: #4b5152;
+  --txs-color: #3b4144;
+  --acn-color: #00adbb;
+  --nvy-color: #052286;
+  --nvy-color: #172A3A;
+  --min-color: #9506be;
+  --min-color: #A99DC0;
+  --min-color: #AE76A6;
+  --max-color: #31d4c1;
+  --lnd-black: #004346;
+  --pur-color: #a362ea;
+}
+body{
+  background-color: #f5f7fb;
+  background-color: rgb(243, 252, 252);
+}
+.listings{
+  min-height: 100vh; 
+}
+.listings .property{
+  width: 80%;
+  max-width: 1300px;
+  margin: 125px auto 180px;
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+}  
+.property .imgBx{
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, .05);
+  flex-basis: 55%;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.imgBx img{ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.property .contentBx{
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+
+}
+.property .contentBx > p{
+  text-align: justify;
+  color: #333;
+}
+.property .sales-tag{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: var(--txt-color);
+  /* margin-bottom: 1.75em; */
+} 
+.property .location > span{
+  display: inline-block;
+  padding: 1px 15px 3px; 
+  background-color: var(--pri-color);
+  color: #fff;
+  border-radius: 15px; 
+  font-weight: 300;
+}
+.property .sales-tag h4{
+  font-size: .95rem;
+  font-weight: 400;
+}
+.property .sales-tag i{
+  color: var(--pur-color); 
+  margin-right: 5px;
+} 
+.property .sales-tag .pricing{
+  display: flex;
+  flex-direction: column;
+}
+.property .sales-tag .pricing h5{
+  color: var(--pri-color);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.property .sales-tag .pricing h5:last-of-type{
+  font-size: 0.8rem;
+  color: var(--txt-color);
+  text-align: right;
+}
+.property .landmark{   
+  display: flex;
+  flex-direction: column;
+}
+.property .landmark h5{
+  position: relative;
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.property .landmark h5::after{
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 4px;
+  left: 0;
+  top: 25px;
+  background-color: var(--pur-color);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+} 
+.perimeter{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  align-self: center;
+}
+.perimeter .box{
+  position: relative;
+  width: 350px;
+  height: 55px;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
+  transition: .5s ease-in-out;
+}
+.perimeter .box::before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: var(--clr);
+  transition: .5s ease-in-out;
+}
+.perimeter .box:hover::before{
+  width: 98.5%;
+}
+
+.perimeter .box:nth-child(1){
+  transform: translateX(70px);
+} 
+.perimeter .box:nth-child(3){
+  transform: translateX(-70px);
+}
+.perimeter:hover .box:nth-child(1){
+  transform: translateX(0);
+} 
+.perimeter:hover .box:nth-child(3){
+  transform: translateX(0);
+}
+
+.perimeter .box .content{
+  position: relative;
+  display: flex;
+  align-items: center; 
+  height: 100%; 
+}
+
+.perimeter .box .content .icon{
+  position: relative;
+  min-width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.perimeter .box .content .icon i{
+  font-size: 1.85rem;
+  color: var(--clr);
+
+}
+.perimeter .box:hover .content .icon i{
+  color: #fff;
+} 
+.perimeter .box .content .text h3{
+  font-weight: 400;
+  font-size: 1.01rem;
+  color: var(--clr);
+  transition: .5s ease-in-out;
+  line-height: 1.15;
+}
+.perimeter .box .content .text p{ 
+  font-size: 0.85rem;
+  color: #555;
+  transition: .5s ease-in-out;
+}
+.perimeter .box:hover .content .text h3,
+.perimeter .box:hover .content .text p{
+  color: #fff;
+}
+
+.property.reverse{
+  flex-direction: row-reverse;
+}
+
+/* Mobile View */
+@media screen and (max-width: 991px) {
+  .listings .property{
+    width: 97%;
+    max-width: 1300px;
+    margin: 125px auto; 
+    flex-direction: column;
+    
+  }  
+  .property .imgBx{ 
+    flex-basis: 100%; 
+  } 
+  .property .contentBx{
+    flex-basis: 100%; 
+  
+  }
+}
+/* End of Mobile View */
