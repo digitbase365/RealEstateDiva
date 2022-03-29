@@ -14,7 +14,7 @@
 }
 .frontline{
   min-height: 36vh; 
-  background: url(./img/frontlinePic.avif) no-repeat center center / cover;
+  background: url(./img/frontlinePic-min.png) no-repeat center center / cover;
   margin-top: 0;
   position: relative;
   top: 7.5vh;
