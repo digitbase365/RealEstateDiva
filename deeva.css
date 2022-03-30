@@ -621,6 +621,7 @@ section{
   }
   .service-box{ 
     padding: 1.5em .85em; 
+    margin-bottom: 25px;
   }
   .services .discovery{
     max-width: 80%;  
