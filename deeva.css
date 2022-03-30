@@ -67,11 +67,11 @@ section{
   
   }
   #header .brand img{
-    height: 80%; 
+    height: 90%; 
   }
   #header div.header.container{
     width: 100vw;
-    padding: .25em;
+    padding: .4em;
     height: 7vh; 
     background-color: #fff;
     overflow: hidden;
