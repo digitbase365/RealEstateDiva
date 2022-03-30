@@ -1,6 +1,9 @@
 :root{
   --act-color: #ffc000;
 }
+a, p{
+  outline: none;
+}
 .wrap{
   max-width: 75%;
   margin: 0 auto; 

@@ -18,6 +18,9 @@ body{
   background-color: #f5f7fb;
   background-color: rgb(243, 252, 252);
 }
+a, p{
+  outline: none;
+}
 .listings{
   min-height: 100vh; 
 }
