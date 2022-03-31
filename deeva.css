@@ -527,6 +527,8 @@ section{
 }
 .eleven{
   grid-area: eleven;
+  background: url(./img/explorer/awardee2-min.jpg) center left;
+  background-size: cover;
 }
 .twelve{
   grid-area: twelve;
@@ -569,7 +571,7 @@ section{
   color: var(--hlt-color);
 }
 .service-box img{
-  max-width: 128px;
+  max-width: 100px;
 }
 .service-box h5{
   font-size: 1.45rem;
