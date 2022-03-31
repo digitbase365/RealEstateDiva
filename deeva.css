@@ -231,7 +231,9 @@ section{
   #header .hamburger{
     display: none;
   }
-  
+  #header li.hidden{
+    display: none;
+  }
   #header nav{
     height: 100%;
     width: 100%;
@@ -250,6 +252,7 @@ section{
     width: fit-content;
     right: 13.7%; 
   } 
+
   #header nav ul li a{
     font-size: 1.01rem; 
     color: #065143;
@@ -336,7 +339,7 @@ section{
 .hero .caption{ 
   display: flex; 
   justify-content: flex-start; 
-  padding: 0 3em 0 15em;
+  padding: 0 3em 0 13em;
 }
 .hero .caption h1{
   position: relative;
@@ -345,8 +348,7 @@ section{
   z-index: 5; 
   font-weight: 400;
   font-family: 'Neonderthaw', cursive;  
-  font-family: 'Comfortaa', cursive;   
-
+  font-family: 'Comfortaa', cursive;    
 }
 .hero .caption h1 span{ 
   font-family: 'Comfortaa', cursive;   
@@ -381,10 +383,10 @@ section{
     position: relative;
     font-size: 1.56rem; 
     font-weight: 300;
-    padding: 0 20px;
-    text-align: center;
+    padding: 0;
+    text-align: center; 
   }
-}
+} 
 
 /* ***********End of Hero Section Ruleset*************** */
 
@@ -618,7 +620,7 @@ section{
 
 @media screen and (max-width: 991px) {
   .services .base{ 
-    padding: .2em; pace-around;
+    padding: .2em; 
     flex-wrap: wrap;
     gap: 30px; 
   }
@@ -641,6 +643,13 @@ section{
 }
 
 /* ***********End of Services Section Ruleset*************** */
+
+/* TESTIMONIALS SECTION */
+section.testimonials{
+  min-height: 50vh;
+  background-color: #ceb7ff;
+}
+/* END OF TESTIMONIALS SECTION */
 
 /* About Section Ruleset */
 #about{
@@ -1141,10 +1150,7 @@ footer div{
 }
 .footer-svg svg{
   max-height: 200px;
-}
-footer .socials .sci{ 
-  /* text-align: center; */
-}
+} 
 .copyright p{
   font-size: 0.75rem;
 }
