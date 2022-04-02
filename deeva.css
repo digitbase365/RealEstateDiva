@@ -658,12 +658,16 @@ section{
 .testimonial h3, .testimonial h3 span{
   text-align: center;
   font-family: 'Dosis', sans-serif;
-  font-size: 1rem;
+  font-size: .9rem;
+  line-height: 1.5;
   background-color: #000; 
   background-color: #8a6bd2; 
   width: 100%;
   color: #fff;
   border-radius: 25px;
+}
+.testimonial h3{
+  padding: 2px 5px;
 }
 .testimonial .slider{
   display: block;
