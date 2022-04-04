@@ -467,7 +467,6 @@ section{
   font-size: .75rem;
   margin-left: 5px;
   color: #888; 
-
 }
 .one{
   grid-area: one;
@@ -481,26 +480,25 @@ section{
 }
 .explorer .base .three{
   grid-area: three;
-  background-color: #798d9c;
-  text-align: left;
-  padding: 20px;
-}
-.explorer .base .three h5{
-  font-size: 1.1rem;
-}
-.explorer .base .three h4{
-  margin-top: 20px;
-  font-size: 1.15rem;
-  font-weight: normal;
-
-}
+} 
 .four{
   grid-area: four;
   background: url(./img/tile04.jpg) center center;
 }
-.five{
-  grid-area: five;
-  background: url(./img/tile05.jpg) center center;
+.explorer .base .five{
+  grid-area: five; 
+  background-color: #798d9c;
+  text-align: left;
+  padding: 20px 20px 40px;
+}
+.explorer .base .five h5{
+  font-size: 1.1rem;
+}
+.explorer .base .five h4{
+  margin-top: 20px;
+  font-size: .95rem;
+  font-weight: 300;
+  line-height: 1.2;
 }
 .six{
   grid-area: six;
@@ -537,6 +535,7 @@ section{
 }
 .thirteen{
   grid-area: thirteen;
+  background: url(./img/tile05.jpg) center center;
 }
 
 /* Explorer Fluidity */ 
