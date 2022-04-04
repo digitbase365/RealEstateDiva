@@ -480,7 +480,11 @@ section{
 }
 .explorer .base .three{
   grid-area: three;
+  padding: 0px;
 } 
+.explorer .base .three video{
+  object-fit: cover;
+}
 .four{
   grid-area: four;
   background: url(./img/tile04.jpg) center center;
