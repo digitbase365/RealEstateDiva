@@ -68,7 +68,7 @@ section{
   
   }
   #header .brand img{
-    height: 100%; 
+    height: 95%; 
   }
   #header div.header.container{
     width: 100vw;
@@ -316,7 +316,7 @@ section{
   margin: 0 auto;
   min-height: 75vh;
   background-color: dodgerblue;
-  background: url(./img/hero02.jpg) no-repeat center center;
+  background: url(./img/hero_002x.jpg) no-repeat center bottom; 
   background-size: cover;
   background-attachment: fixed;
   border-radius: 8px; 
@@ -371,7 +371,8 @@ section{
 @media screen and (max-width: 991px) {
   .hero{
     width: 95%;
-    min-height: 65vh; 
+    min-height: 65vh;   
+    background: url(./img/mobile-hero_01xx.jpg) no-repeat center bottom;  
   }
   .hero .caption{ 
     position: relative;
@@ -469,13 +470,13 @@ section{
   color: #888; 
 }
 .one{
-  grid-area: one;
-  background: url(./img/tile01.png) center center;
+  grid-area: one; 
+  background: url(./img/explorer/tile001x.jpg) center center;
   background-size: cover;
 }
 .two{
-  grid-area: two;
-  background: url(./img/tile07.jpg) center center;
+  grid-area: two; 
+  background: url(./img/explorer/tile007.jpg) center bottom;
   background-size: cover;
 }
 .explorer .base .three{
@@ -487,7 +488,7 @@ section{
 }
 .four{
   grid-area: four;
-  background: url(./img/tile04.jpg) center center;
+  background: url(./img/explorer/tile04.jpg) center center;
 }
 .explorer .base .five{
   grid-area: five; 
@@ -506,27 +507,27 @@ section{
 }
 .six{
   grid-area: six;
-  background: url(./img/tile06.png) center center;
+  background: url(./img/explorer/tile06-min.png) center center;
   background-size: cover;
 }
 .seven{
   grid-area: seven;
-  background: url(./img/tile02.jpg) center center;
+  background: url(./img/explorer/tile02-min.jpg) center center;
   background-size: cover;
 }
 .eight{
   grid-area: eight;
-  background: url(./img/tile08.jpg) center center;
+  background: url(./img/explorer/tile08-min.jpg) center center;
   background-size: cover;
 }
 .nine{
   grid-area: nine;
-  background: url(./img/tile09.png) center center;
+  background: url(./img/explorer/tile09y.jpg) center top / cover;
 
 }
 .ten{
   grid-area: ten;
-  background: url(./img/tile10.png) center center;
+  background: url(./img/explorer/tile10.png) center center;
   background-size: cover;
 }
 .eleven{
@@ -535,11 +536,13 @@ section{
   background-size: cover;
 }
 .twelve{
-  grid-area: twelve;
+  grid-area: twelve; 
+  background: url(./img/explorer/tile012.jpg) center center;
+  background-size: cover;
 }
 .thirteen{
   grid-area: thirteen;
-  background: url(./img/tile05.jpg) center center;
+  background: url(./img/explorer/tile05-min.jpg) center center;
 }
 
 /* Explorer Fluidity */ 
