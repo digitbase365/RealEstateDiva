@@ -166,12 +166,12 @@ font-family: 'Neonderthaw', cursive;
             I couldn’t recommend Real Estate Diva enough. I’m now in the land of my dreams and so excited about the future. ”
           </p>
           <p class="author">
-            Tanya Sinclair
-            <span>UX Engineer, Canada</span>
+            Tata Agomate
+            <span>Berkshire, UK</span>
           </p>
         </div>
         <div class="slide-img">
-          <img src="./img/testimonials/image-tanya.jpg" alt="">
+          <img src="./img/testimonials/Tata.jpeg" alt="">
         </div>
       </div> 
 
@@ -186,29 +186,27 @@ font-family: 'Neonderthaw', cursive;
           </p>
         </div>
         <div class="slide-img">
-          <img src="./img/testimonials/Jason1-min.jpg" alt="">
+          <img src="./img/testimonials/jasn.jpg" alt="">
         </div>
       </div> 
       <div class="slide slide-3">
         <div class="slide-text">
           <p class="testimony">
-            “ If you want to lay the best foundation possible I’d recommend taking this course. 
-            The depth the instructors go into is incredible. I now feel so confident about 
-            starting up as a professional developer. ”
+            “Our agent was Real Estate Diva, she is very knowledgeable of the current market trends. He was very helpful and straight forward with us on the purchase of our landed property. She is a professional in key aspects of the real estate business. She would respond quickly if we sent her a text message or called her. Top notch customer attentiveness!”
           </p>
           <p class="author">
-            Sele Digitbase
-            <span>Junior Front-end Developer</span>
+            Wilson Agofure
+            <span>Executive Lead, Worldwide Healthcare, Benin-City</span>
           </p>
         </div>
         <div class="slide-img">
-          <img src="./img/testimonials/image-john.jpg" alt="">
+          <img src="./img/testimonials/Will.jpeg" alt="">
         </div>
       </div> 
       <div class="slide slide-4">
         <div class="slide-text">
           <p class="testimony">
-            “I was looking for an affordable and reliable Real estate company to buy some landed properties in Portharcourt, Rivers state,  Timi of Velox company was connected to me by a friend  and she delivered. Velox company is a trusted company that treats her customer with love and respect. I wholeheartedly recommend Timi of Velox Real Estate to everyone I  know.”
+            “I was looking for an affordable and reliable Real estate company to buy some landed properties in Port-Harcourt, Rivers state,  Timi of Velox company was connected to me by a friend  and she delivered. Real Estate Diva is a trusted firm that treats her customer with love and respect. I wholeheartedly recommend Timi of Velox Real Estate to everyone I  know.”
           </p>
           <p class="author">
             Ugochukwu Justin
@@ -216,7 +214,7 @@ font-family: 'Neonderthaw', cursive;
           </p>
         </div>
         <div class="slide-img">
-          <img src="./img/testimonials/Justin1-min.jpg" alt="">
+          <img src="./img/testimonials/Justn.jpg" alt="">
         </div>
       </div> 
       <div class="buttons">
@@ -355,25 +353,25 @@ font-family: 'Neonderthaw', cursive;
             <span class="circle one"></span>
             <span class="circle two"></span>
     
-            <form action="index.html">
+            <form onsubmit="sendEmail(); reset(); return false;">
               <h3 class="title">Contact Us</h3>
               <div class="input-container">
-                <input type="text" name="name" class="input">
+                <input type="text" name="name" class="input" id="name" required>
                 <label for="">Username</label>
                 <span>Username</span>
               </div>
               <div class="input-container">
-                <input type="text" name="name" class="input">
+                <input type="text" name="name" class="input" id="email" required>
                 <label for="">Email</label>
                 <span>Email</span>
               </div>
               <div class="input-container">
-                <input type="text" name="name" class="input">
+                <input type="text" name="name" class="input" id="phone">
                 <label for="">Phone</label>
                 <span>Phone</span>
               </div>
               <div class="input-container textarea">
-                <textarea name="message" class="input"></textarea>
+                <textarea name="message" class="input" id="message"></textarea>
                 <label for="">Message</label>
                 <span>Message</span>
               </div>
@@ -408,5 +406,24 @@ font-family: 'Neonderthaw', cursive;
   </footer>
 
   <script src="./JS/hero.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "Real Estate Diva",
+        Password : "uizqogczgahjimax",
+        To : 'etimisele@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Real Estate Enquiry",
+        Body : "Name:" + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone Number: " + document.getElementById("phone").value
+                + "<br> Message: " + document.getElementById("message").value
+      }).then(
+      message => alert("Message sent successfully")
+      );
+    }
+  </script>
 </body>
 </html>

@@ -185,8 +185,8 @@ a, p{
 /* *****PARALLAX SECTION RULESET************ */
 
 .parallax{
-  height: 40vh;
-  background: #F8F4FD url(./img/paralla.jpg) center center / cover;
+  height: 40vh; 
+  background: #F8F4FD url(./img/paralla-min.jpg) center center / cover;
   position: relative;
   background-attachment: fixed;
   display: grid;

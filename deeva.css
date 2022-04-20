@@ -153,8 +153,7 @@ section{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transform: scale(.8); 
-    /* margin-right: -10px; */
+    transform: scale(.8);  
   }
   #header .hamburger::after{
     position: absolute;
@@ -691,12 +690,15 @@ section{
   align-items: center;
   text-align: center;   
 }
-.testimonial .slide-img{
-  width: 100%;
-  height: 100%; 
+.testimonial .slide-img{ 
+  width: 362px;
+  height: 392px; 
   margin: 0 auto;
   padding: 50px;
-  background: url(./img/testimonials/pattern-bg.svg) no-repeat center / contain; 
+  background: url(./img/testimonials/pattern-bg.svg) no-repeat center / contain;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .testimonial .slide-img img{
   height: 100%;
@@ -714,7 +716,8 @@ section{
   margin-top: 10px;
   font-weight: 300; 
   line-height: 1.25rem;
-  color: #202046;
+  color: #202046; 
+  padding-right: 4em;
 }
 .testimonial .author{
   margin-top: 20px;
@@ -810,6 +813,13 @@ section{
 .testimonials h3{
   text-align: center;
 }
+
+/* TESTIMONIAL FLUIDITY */ 
+
+@media screen and (max-width: 991px) {
+  
+}
+
 /* END OF TESTIMONIALS SECTION */
 
 /* ABOUT Section Ruleset */
@@ -1071,7 +1081,7 @@ form .input-container.textarea label{
   transform: translateY(-50%);
 }
 form .subm-btn{
-  padding: .6em 1.3em;
+  padding: .45em 1.5em;
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95em;
