@@ -315,7 +315,7 @@ section{
   margin: 0 auto;
   min-height: 75vh;
   background-color: dodgerblue;
-  background: url(./img/hero_002x.jpg) no-repeat center bottom; 
+  background: url(./img/hero_002x-min.jpg) no-repeat center bottom; 
   background-size: cover;
   background-attachment: fixed;
   border-radius: 8px; 
@@ -371,7 +371,7 @@ section{
   .hero{
     width: 95%;
     min-height: 65vh;   
-    background: url(./img/mobile-hero_01xx.jpg) no-repeat center bottom;  
+    background: url(./img/mobile-hero_01xx-min.jpg) no-repeat center bottom;  
   }
   .hero .caption{ 
     position: relative;
