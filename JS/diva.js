@@ -143,3 +143,20 @@ next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
 // **************************** End of Scrpit for Testimonial Page
+
+
+
+// WHATSAPP CHAT BOT SCRIPT****************************************//
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 400) { 
+    document.getElementById("chat").classList.add("scroll-visible");
+  } else { 
+    document.getElementById("chat").classList.remove("scroll-visible");
+
+  }
+}
+
+// END OF WHATSAPP CHAT BOT SCRIPT****************************************//
+
