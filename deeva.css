@@ -942,7 +942,7 @@ section.testimonial{
 
 @media screen and (max-width: 991px) {
   #about{
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(160deg, #fff, #fff 52%, #00adbb 52%, #007882 100%);
     padding: 0;  
   }
@@ -968,20 +968,21 @@ section.testimonial{
   /* MOBILE ALTERNATE ABOUT DECLARARIONS */
   
   #about .cred{
-    min-height: auto; 
+    min-height: 100vh; 
+    height: 100%; 
     flex-direction: column;
     justify-content: space-around;
-    justify-content: center; 
-    padding: .75em;
-    padding-top: 220px;
-    gap: 4em; 
+    justify-content: center;  
+    padding-right: .3em;
+    gap: 5em; 
 
   }
   .cred .endorsement{
     flex-basis: 100%;
     height: 300px;
     display: flex; 
-    /* flex-direction: column; */
+    margin-top: 100px;
+
   }
   .endorsement p{
     flex-basis: 20%;
@@ -1013,6 +1014,7 @@ section.testimonial{
   .pedigree{ 
     align-self: flex-end; 
     margin-right: 1em;
+    margin-bottom: 120px;
   }
 }
 
