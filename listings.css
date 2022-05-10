@@ -254,6 +254,11 @@ a, p{
 
   
 }
+
+@media screen and (max-width: 991px){ 
+  footer p{  
+    font-size: 0.65rem; 
+  } 
 /* End of Mobile View */
 
 
