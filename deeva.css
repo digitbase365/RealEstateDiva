@@ -650,6 +650,9 @@ section{
 /* ***********End of Services Section Ruleset*************** */
 
 /* TESTIMONIALS SECTION */
+section.testimonial{
+  margin-bottom: 0;
+}
 .testimonial{
   min-height: 100vh;
   width: 100%;
@@ -824,10 +827,10 @@ section{
 
 /* ABOUT Section Ruleset */
 #about{
-  min-height: 60vh;
+  min-height: 100vh;
   background: linear-gradient(120deg, #fff, #fff 52%, #00adbb 52%, #007882 100%);
   padding: 5em 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 .about{
   display: flex;
@@ -860,6 +863,61 @@ section{
   position: relative;
   z-index: -1;
 }
+
+/* ALTERNATE ABOUT DECLARATIONS */ 
+#about .cred{
+  height: 565px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  justify-content: center;
+  gap: 2em; 
+  flex-wrap: wrap;
+}
+.cred .endorsement{
+  flex-basis: 50%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.endorsement p{
+  /* flex-basis: 60%; */
+  padding-left: 2.2em;
+}
+.cred .videoclip, .cred .pedigree{
+  width: 320px;
+  height: 400px; 
+}
+.videoclip{
+  position: relative;
+  flex-basis: 80%;
+  z-index: 1999;
+}
+.videoclip::before, .videoclip::after{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 2px solid goldenrod;
+  /* border: 2px solid #92c800; */
+}
+.videoclip::before{
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+}
+.videoclip::after{
+  top: -20px;
+  right: 20px;
+  z-index: -1;
+}
+.pedigree{
+  background-color: #fff;
+  align-self: flex-end;
+}
+/* END OF ALTERNATE ABOUT DECLARATIONS */
 
 /* ABOUT FLUIDITY */ 
 
