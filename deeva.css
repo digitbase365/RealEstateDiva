@@ -30,7 +30,7 @@ p{
 
 section{
   margin: 85px 0;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .section-title{
   margin-bottom: 15px;
@@ -973,9 +973,8 @@ section.testimonial{
     flex-direction: column;
     justify-content: space-around;
     justify-content: center;  
-    padding-right: .3em;
-    gap: 5em; 
-
+    padding-right: .3em; 
+    gap: 90px;
   }
   .cred .endorsement{
     flex-basis: 100%;
@@ -1013,8 +1012,14 @@ section.testimonial{
 
   .pedigree{ 
     align-self: flex-end; 
-    margin-right: 1em;
+    margin-right: .75em;
     margin-bottom: 120px;
+  }
+  .pedigree::before{ 
+    transform: translate(-25%, 102%); 
+  }
+  .pedigree::after{  
+    transform: translate(-75%, -25%); 
   }
 }
 
