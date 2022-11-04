@@ -33,10 +33,13 @@ a, p{
   flex-wrap: wrap;
 }  
 .property .imgBx{
-  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, .05);
+  /* box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, .05); */
   flex-basis: 55%;
-  border-radius: 7px;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .imgBx img{ 
   width: 100%;
@@ -61,13 +64,38 @@ a, p{
   color: var(--txt-color);
   /* margin-bottom: 1.75em; */
 } 
+a.buy{   
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 15px;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+} 
 .property .location > a span{
   display: inline-block;
-  padding: 1px 15px 3px; 
-  background-color: var(--pri-color);
-  color: #fff;
-  border-radius: 15px; 
-  font-weight: 300;
+  padding: 1px 15px 3px;  
+  color: var(--pri-color);
+  /* color: var(--pur-color); */
+  border-radius: 15px;  
+  font-weight: 500;
+  
 }
 .property .sales-tag h4{
   font-size: .95rem;
@@ -126,7 +154,8 @@ a, p{
   background-color: #fff;
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
-  transition: .5s ease-in-out;
+  transition: .5s ease-in-out; 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 .perimeter .box::before{
   position: absolute;
@@ -259,6 +288,7 @@ a, p{
   footer p{  
     font-size: 0.65rem; 
   } 
+}
 /* End of Mobile View */
 
 
