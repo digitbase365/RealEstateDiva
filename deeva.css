@@ -51,6 +51,7 @@ section{
   height: 20px; 
   border: 3px solid goldenrod;
   border: 3px solid rgb(61, 240, 76);
+  border: 3px solid #1ED1BB;
   border-left: 0;
   border-top: 0;
   bottom: -4px;
@@ -154,6 +155,7 @@ section{
   #header nav ul li:hover a{
     color: dodgerblue;
     color: #08a315;
+    color: #1ED1BB;
   }
 
   #header .hamburger{
@@ -294,6 +296,7 @@ section{
     color: white; 
     background: rgb(91, 192, 190); 
     background: linear-gradient(0deg, rgb(53, 134, 0) 0%, rgb(97, 245, 109) 100%);
+    background: linear-gradient(0deg, #1ED1BB 0%, #1ED1BB 100%);
     border: none;
     box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
     letter-spacing: 0.05em;
@@ -917,7 +920,7 @@ section.testimonial{
   content: "";
   height: 100%;
   width: 100%;
-  border: 2px solid goldenrod; 
+  border: 2px solid #1ED1BB; 
 }
 .videoclip::before{
   top: 20px;
@@ -939,7 +942,7 @@ section.testimonial{
   content: "";
   width: 40px;
   height: 40px;
-  border: 4px solid goldenrod;
+  border: 4px solid #1ED1BB;
 }
 .pedigree::before{
   bottom: 0%;
