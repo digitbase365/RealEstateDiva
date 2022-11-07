@@ -24,13 +24,20 @@ a, p{
 .listings{
   min-height: 100vh; 
 }
+.listings .bg{
+  padding: .5em 0;
+}
+.listings .bg.rev{
+  background-color: #d9ffff;
+}
 .listings .property{
   width: 80%;
   max-width: 1300px;
   margin: 125px auto 180px;
   display: flex;
   justify-content: space-between; 
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
+
 }  
 .property .imgBx{
   /* box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, .05); */

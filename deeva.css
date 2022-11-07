@@ -50,6 +50,7 @@ section{
   width: 20px;
   height: 20px; 
   border: 3px solid goldenrod;
+  border: 3px solid rgb(61, 240, 76);
   border-left: 0;
   border-top: 0;
   bottom: -4px;
@@ -126,14 +127,13 @@ section{
     text-align: right;
   }
   #header nav ul a{
-    font-size: .95rem;
-    font-weight: 300; 
+    font-size: .95rem; 
     color: #fff; 
     padding: .75em;
     display: block;
     position: relative;
     transition: color .5s ease;
-    text-transform: uppercase;
+    text-transform: uppercase; 
   }
   #header nav ul a::after{
     position: absolute;
@@ -153,6 +153,7 @@ section{
   }
   #header nav ul li:hover a{
     color: dodgerblue;
+    color: #08a315;
   }
 
   #header .hamburger{
@@ -260,7 +261,7 @@ section{
   } 
   #header nav ul li{  
     width: fit-content;
-    right: 11.8%; 
+    right: 9.25%; 
   } 
 
   #header nav ul li a{
@@ -288,8 +289,7 @@ section{
     display: flex;
     align-items: center;
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 500; 
     padding: 0.7em 2em;
     color: white; 
     background: rgb(91, 192, 190); 
@@ -485,7 +485,7 @@ section{
 }
 .two{
   grid-area: two; 
-  background: url(./img/explorer/tile007.jpg) center bottom;
+  background: url(./img/listings/cvl.jpg) center bottom;
   background-size: cover;
 }
 .explorer .base .three{
@@ -675,7 +675,7 @@ section.testimonial{
   justify-content: center;
   flex-direction: column;
   padding: 30px;
-  background: url(./img/testimonials/pattern-curve.svg) no-repeat center bottom / contain;
+  background: url(./img/testimonials/pattern-curve.svg) no-repeat center bottom -35% / contain;
 }
 .testimonial h3, .testimonial h3 span{
   text-align: center;
@@ -716,10 +716,14 @@ section.testimonial{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .testimonial .slide-img img{
   height: 100%;
   width: 100%;
+  outline: 2px solid rgb(18, 173, 31);
+  outline: 2.5px solid #e2e2f5;
+  outline-offset: 3px;
 }
 .testimonial .slide-text{
   padding-top: 30px;
@@ -843,6 +847,7 @@ section.testimonial{
 #about{
   min-height: 100vh;
   background: linear-gradient(120deg, #fff, #fff 52%, #00adbb 52%, #007882 100%);
+  background: linear-gradient(120deg, #fff, #fff 52%, #f4f4fc 52%, #f4f4fc 100%);
   padding: 5em 0;
   margin: 0;
 }
