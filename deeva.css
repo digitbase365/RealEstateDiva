@@ -226,20 +226,17 @@ section{
 /* HEADER DESKTOP Media Query */
 @media screen and (min-width: 1200px){ 
   
-  #header div.header.container{
-    width: 100vw;
+  #header div.header.container{ 
     padding: .1em .25em;
     padding-right: 0;
     height: 7.5vh; 
-    background-color: #fff; 
+    background-color: #fff;  
   }
   .header .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%; 
-    padding: 0 10px; 
+    display: flex; 
+    align-items: center;  
+    padding: 0 10px;  
+
   } 
   #header .hamburger{
     display: none;
@@ -248,10 +245,10 @@ section{
     display: none;
   }
   #header nav{
-    height: 100%;
-    width: 100%;
+    height: 100%; 
     display: flex;
     align-items: center; 
+
   }
   #header nav ul{  
     position: initial;   
@@ -259,11 +256,11 @@ section{
     align-items: center;
     justify-content: flex-end; 
     height: auto;  
-    background-color: transparent;   
+    background-color: transparent;    
   } 
   #header nav ul li{  
     width: fit-content;
-    right: 13.7%; 
+    right: 11.8%; 
   } 
 
   #header nav ul li a{
@@ -279,44 +276,43 @@ section{
     border: 1px solid #2E5266;   
     border: 1px solid #007882;   
     color: #2E5266;
-    color: #007882;
-    width: 125px;   
+    color: #007882; 
     height: 35px;
     line-height: 2;
     text-align: center;
     border-radius: 25px;
-    margin-left: 4.5em;    
+    margin-left: 2em;    
     transition: .65s ease; 
     position: relative;   
+    
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 2em;
+    color: white; 
+    background: rgb(91, 192, 190); 
+    background: linear-gradient(0deg, rgb(53, 134, 0) 0%, rgb(97, 245, 109) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
   }
-  #header .header .cta:hover{
-    background-color: #2E5266;
-    background-color: #007882;
-    color: #fff;
-  }
-/* 
-  #header .header .cta::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
-    border: 2px solid #0fd0b9;
-    animation: ham_pulsed 1.5s ease infinite; 
+   
+  #header .header .cta:active {
+    box-shadow: 0 0.3em 1em 0.5em #14a73e98;
   }
 
-  @keyframes ham_pulsed{
-    0%{
-      opacity: 1;
-      transform: scale(1.1);
-    }
-    100%{
-      opacity: 0;
-      transform: scale(1.25);
-    }
-  } */
+
+  #header .header .cta:hover{  
+    box-shadow: 0 0.5em 1.5em -0.5em #c4320a98; 
+  } 
 }
 
 /* ***********End of Header Section Ruleset*************** */
